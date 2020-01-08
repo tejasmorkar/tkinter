@@ -1,4 +1,4 @@
-# TkInter
+# Getting Started with TkInter
 
 ## Projects Included in this Repository
 
