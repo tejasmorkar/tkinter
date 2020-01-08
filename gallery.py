@@ -13,6 +13,8 @@ my_img5 = ImageTk.PhotoImage(Image.open("./assets/img5.jpg"))
 
 img_list = [my_img1, my_img2, my_img3, my_img4, my_img5]
 
+status = Label(root, text="Image 1 of {}".format(str(len(img_list))), bd=1, relief=SUNKEN, anchor=E)
+
 my_label = Label(image=my_img1)
 my_label.grid(row=0, column=0, columnspan=3)
 
@@ -33,6 +35,9 @@ def bck(img_num):
 	button_bck.grid(row=1, column=0)
 	button_fwd.grid(row=1, column=2)
 
+	status = Label(root, text="Image {} of {}".format(str(img_num), str(len(img_list))), bd=1, relief=SUNKEN, anchor=E)
+	status.grid(row=2, column=0, columnspan=3, sticky=W+E)
+
 def fwd(img_num):
 	global my_label
 	global button_fwd
@@ -50,6 +55,9 @@ def fwd(img_num):
 	button_bck.grid(row=1, column=0)
 	button_fwd.grid(row=1, column=2)
 
+	status = Label(root, text="Image {} of {}".format(str(img_num), str(len(img_list))), bd=1, relief=SUNKEN, anchor=E)
+	status.grid(row=2, column=0, columnspan=3, sticky=W+E)
+
 
 button_bck = Button(root, text="<<", command=bck, state=DISABLED)
 button_quit = Button(root, text="Exit Program", command=root.quit)
@@ -57,6 +65,8 @@ button_fwd = Button(root, text=">>", command=lambda: fwd(2))
 
 button_bck.grid(row=1, column=0)
 button_quit.grid(row=1, column=1)
-button_fwd.grid(row=1, column=2)
+button_fwd.grid(row=1, column=2, pady="10")
+
+status.grid(row=2, column=0, columnspan=3, sticky=W+E)
 
 root.mainloop()
