@@ -8,6 +8,6 @@
 
 ***
 
-Content learnt from [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)'s YouTube video: [Tkinter Course - Create Graphic User Interfaces in Python Tutorial](https://youtu.be/YXPyB4XeYLA)
+Content learnt from [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ){:target="_blank"}'s YouTube video: [Tkinter Course - Create Graphic User Interfaces in Python Tutorial](https://youtu.be/YXPyB4XeYLA){:target="_blank"}
 
-> created by - [@tejasmorkar](https://github.com/tejasmorkar)
+> created by - [@tejasmorkar](https://github.com/tejasmorkar){:target="_blank"}
